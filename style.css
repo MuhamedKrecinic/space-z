@@ -9,8 +9,8 @@
     
 }
 body{
-    height: 900px;
-    width: 1600px;
+    height: 1080px;
+    width: 1920px;
     background-image: url(img/DSC09946-01-01\ 1.png);
     background-repeat: no-repeat; 
     background-size: cover;  
@@ -21,7 +21,7 @@ header{
     
     justify-content: space-between;
     display: flex;
-    height: 80px;
+    height: 104px;
     background-color: white;
     align-items: center;
     padding-left: 60px;
@@ -29,7 +29,7 @@ header{
 }
 ul li{
     display: inline-block;
-    padding: 0px 20px ;
+    padding: 0px 20px;
     text-decoration: none;
     
 }
@@ -45,11 +45,12 @@ a{
     display:inline-block;
     margin: 0;
     padding: 0;
+
       
 }
 .spacez{
     margin-left: -20px;
-    margin-top: -20px;
+    padding-bottom: 5px;
 }
 main{
     text-align: center;
@@ -68,7 +69,7 @@ button{
     width: 210px;
     height: 70px;
     background-color: rgba(128, 128, 128, 0);
-    color:rgb(192, 21, 21);
+    color:white;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 18px;
@@ -80,14 +81,45 @@ button{
     left:50%;
     margin-left: -105px;
     margin-top: -35px;
+
+
 }
+
+button:hover{
+    
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+button:before{
+    transition: 0.5s all ease;
+    top:0;
+    left:50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color:rgba(130, 139, 141, 0.562);
+    position: absolute;
+    border-radius: 100px;
+}
+
+button:hover:before{
+
+    transition:0.5s all ease;
+    left:0;
+    right:0;
+    opacity: 1;
+    z-index: -1;
+
+}
+
 footer{
-    width: 1200px;
+    width: 1070px;
     height:100px;
     position: absolute;
     bottom: 0px;
     left:50%;
-    margin-left:-600px ;
+    margin-left:-535px ;
     border-top-left-radius:  20px; 
     border-top-right-radius:  20px;
     background-color: white;
@@ -113,4 +145,21 @@ section p{
 
 
 }
+header a:hover{
+    color:blue;
+    cursor: pointer;
+}
+button a{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 
+}
+
+section:hover{
+    cursor: pointer;
+    font-size:115%;
+    transition: 0.3s;
+}
