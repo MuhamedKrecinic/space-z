@@ -8,6 +8,10 @@
     box-sizing: border-box;
     
 }
+html{
+    height: 1080px;
+    width: 1920px;
+}
 body{
     height: 1080px;
     width: 1920px;
@@ -61,13 +65,14 @@ main h1{
     color: white;
     font-size: 55px;
     line-height: 82.5px;
-    padding-top: 221px;
+    padding-top: 200px;
+    paddin
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
 }
 
 button{
-    width: 210px;
+    width: 220px;
     height: 70px;
     background-color: rgba(128, 128, 128, 0);
     color:white;
@@ -75,12 +80,12 @@ button{
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
-    border-radius: 100px;
-    border-color: white;
+    border-radius: 60px;
+    border:3px solid white;
     position:absolute;
     top:50%;
     left:50%;
-    margin-left: -105px;
+    margin-left: -110px;
     margin-top: -35px;
 
 
@@ -156,6 +161,7 @@ button a{
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
+    
 
 }
 
